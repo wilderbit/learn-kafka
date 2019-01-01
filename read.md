@@ -72,3 +72,35 @@ Perf-test-tool
 Alter kafka topic partitions
 ----------------------------
 - `bin/kafka-topics.sh --zookeeper localhost:2181 --topic my-topic --alter --partitions 4`
+
+
+# Demo for Consumer Group
+
+Setup
+------
+- Three consumers with same group id
+- consumes a single topic with three partitions
+
+Look for ->
+-----------
+-  Shared topic consumption
+- Adding an additional consumer
+- Adding an additional partition 
+  
+  
+Workflow
+--------
+- start zookeeper
+- start two broker server with port 9093 and 9094
+- create topic with 3 partition
+- Create 4 Consumer App with same group.id
+- Create one producer
+- Start 3 java app consumers
+- start single producer 
+- All three consumers will consume each partitions
+- Now start 4th consumer and run again producer so one of the consumer will sit idle
+- Alter partition 3 to 4
+- Run again producer and see the output of all 4 consumers
+- Now kill one of the consumer so the scenario is 4 partition and 3 consumers
+- Run again producer and see the output of all 3 running consumers
+  
