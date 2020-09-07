@@ -104,3 +104,35 @@ Workflow
 - Now kill one of the consumer so the scenario is 4 partition and 3 consumers
 - Run again producer and see the output of all 3 running consumers
   
+## Producer Config: Required properties
+- bootstrap.servers: list of servers
+- key.serializer
+- value.serializer
+- Refer https://kafka.apache.org/documentation/#producerconfigs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

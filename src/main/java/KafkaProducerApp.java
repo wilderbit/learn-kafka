@@ -16,9 +16,9 @@ public class KafkaProducerApp {
         try {
             for (int i = 0; i < 150; i++) {
                 Future<RecordMetadata> future =
-                        myProducer.send(
-                                new ProducerRecord<String, String>(
-                                        "my-topic", Integer.toString(i), "MyMessage : " + i));
+                    myProducer.send(
+                        new ProducerRecord<String, String>(
+                            "my-topic", Integer.toString(i), "MyMessage : " + i));
                 System.out.println(future.get().partition());
             }
         } catch (Exception e) {
