@@ -114,25 +114,11 @@ Workflow
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Running Java class directly from command line
+- mvn clean install -DskipTests
+- mvn exec:java -Dexec.mainClass=KafkaProducerApp -Dexec.args="foo bar"
+- mvn test -Dtest=com.mycompany.AppTest#testMethod
+- java -cp target/com.vogella.build.maven.java-1.0-SNAPSHOT.jar com.vogella.build.maven.java.App
 
 
 
