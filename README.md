@@ -273,7 +273,7 @@ Start console producer/Java Producer
 $ ./bin/kafka-console-producer.sh --bootstrap-server localhost:9092,localhost:9093,localhost:9094 --topic my_topic
 ```
 
-We can even generate sequence use pipe(|) so feed producer
+We can even generate sequence and use pipe(|) for feeding producer
 
 ```shell script
  seq 1 100 | ./bin/kafka-console-producer.sh --bootstrap-server localhost:9093,localhost:9092,localhost:9094 --topic my_topic
