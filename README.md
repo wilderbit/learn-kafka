@@ -1,5 +1,11 @@
-# Basic Producer configuration
+# Running Kafka cluster
 
+
+### Prerequisite
+- Install Java
+- Install maven(optional)
+- Download kafka binaries from and unzip
+  `https://www.apache.org/dyn/closer.cgi?path=/kafka/2.6.0/kafka_2.13-2.6.0.tgz`
 
 Cluster setup
 -------------
