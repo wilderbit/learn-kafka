@@ -118,8 +118,6 @@ Workflow
 
 
 
-
-
 ## Running Java class directly from command line
 - mvn clean install -DskipTests
 - mvn exec:java -Dexec.mainClass=KafkaProducerApp -Dexec.args="foo bar"
@@ -163,7 +161,6 @@ Start three brokers
 
 Broker Config
 
-`/bin/kafka-server-start.sh ./config/server_0.properties`
 ```properties
 # The id of the broker. This must be set to a unique integer for each broker.
 broker.id=10
@@ -229,7 +226,7 @@ zookeeper.connection.timeout.ms=180000
 group.initial.rebalance.delay.ms=0
 ``` 
 
-Create three the config with changing in broker.id and listeners port
+Create three the config with changing(unique) in broker.id and listeners port(unique)
 - ./config/server_0.properties
 - ./config/server_1.properties
 - ./config/server_2.properties
