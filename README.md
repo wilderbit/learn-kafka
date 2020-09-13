@@ -280,7 +280,7 @@ We can even generate sequence and use pipe(|) for feeding producer
 ```
 
 We can even feed producer from a file, It will take message line by line from file
-```shell script
+```shell script 
 $ cat abc.txt | ./bin/kafka-console-producer.sh --bootstrap-server localhost:9093,localhost:9092,localhost:9094 --topic my_topic
 ```
 
